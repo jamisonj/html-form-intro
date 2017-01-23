@@ -1,14 +1,31 @@
 <!DOCTYPE html>
  <html>
  <head>
-   <link rel="stylesheet" type="text/css" href="css/options.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
    <title>Form</title>
  </head>
  <body>
  	<div class="form-container">
-      
+      <form id="my-form">
+         <div class="label">Username:</div>
+            <input type="text" name="user">
+         <div class="label">Password:</div>
+            <input type="password" name="password">
+         <div class="label">Siblings:</div>
+            <input type="radio" name="siblings" value="1" checked="checked"><span class="label">1</span>
+            <input type="radio" name="siblings" value="2"><span class="label">2</span>
+            <input type="radio" name="siblings" value="3"><span class="label">3</span>
+            <input type="radio" name="siblings" value="4+"><span class="label">4+</span>
+         <div class="label">Transportation:</div>
+            <select form="my-form" name="transportation">
+               <option value="bus">Bus</option>
+               <option value="bicycle">Bicycle</option>
+               <option value="car">Car</option>
+               <option value="other">Other</option>
+            </select>
+         <div class="label">Transportation:</div>
+            <input type="checkbox" name="done" value="yes"><br>
+         <input type="submit">
+      </form>
    </div>
 
  </body>
